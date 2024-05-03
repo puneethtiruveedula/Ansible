@@ -3,3 +3,6 @@
   tasks: # liat pf tasks/modules/collections
   - name: pinging the server
     ansible.builtin.ping:
+
+
+    ffffnfnfknf
