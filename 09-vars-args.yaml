@@ -4,3 +4,8 @@
   - name: get from args
     ansible.builtin.debug:
       msg: "Hello {{PERSON}},  Good {{WISHES}}"
+
+
+# ADD -e before arguments
+# -e "PERSON=Puneeth WISHES=Morning"
+ # -e PERSON=Puneeth -e WISHES=Morning
