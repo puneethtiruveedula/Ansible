@@ -1,19 +1,18 @@
 - name: variables
   hosts: localhost
-  vars:  # variable declaration
+  vars: 
     Course: "Terraform"
-    Trainer: "Puneeth"
-    Duration: "15hrs"
+    Trainer: "Siva"
+    Duration: "15 hrs"
   tasks:
   - name: print override information
-    vars: # task level variables
+    vars: # Task level variables
       Course: "Devops"
     ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
-  
 
-- name: print information
-  ansible.builtin.debug:
-    msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}." git add .; git commit -m "ansible"; git push origin main
 
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
 
