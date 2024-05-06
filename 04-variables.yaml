@@ -1,7 +1,7 @@
 - name: variables
   hosts: localhost
   vars:  # variable declaration
-    course: "Terraform"
+    Course: "Terraform"
     Trainer: "Puneeth"
     Duration: "15hrs"
   tasks:
