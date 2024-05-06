@@ -8,10 +8,12 @@
   - name: print override information
     vars: # task level variables
       Course: "Devops"
-  ansible.builtin.debug:
-    msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
   
 
 - name: print information
   ansible.builtin.debug:
-    msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+    msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}." git add .; git commit -m "ansible"; git push origin main
+
+
