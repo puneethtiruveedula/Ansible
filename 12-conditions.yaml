@@ -5,9 +5,17 @@
   - name: check user exists or not
     ansible.builtin.command: id expense
     register: USER
-    ignore_errors: false
+    ignore_errors: true
 
   - name: print user iformation
     ansible.builtin.debug:
       msg: "User infro: {{USER}}"
+
+  - name: create user
+    ansible.builtin.command: useradd expense
+    when: USER.rc != 0 # condition
+
+  - name: say Hello
+    ansible.builtin.debug:
+      msg: "Hello"
 
