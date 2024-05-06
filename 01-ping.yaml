@@ -1,3 +1,5 @@
+# ansible -i inoventory <filename>
+
 - name: ping the server
   hosts: web
   tasks: # liat pf tasks/modules/collections
