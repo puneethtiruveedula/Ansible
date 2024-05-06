@@ -1,10 +1,10 @@
-name: variables
+- name: variables
   hosts: localhost
   vars:  # variable declaration
     Course: "Terraform"
     Trainer: "Puneeth"
     Duration: "15hrs"
-tasks:
+  tasks:
 - name: print override information
   vars: # task level variables
     Course: "Devops"
