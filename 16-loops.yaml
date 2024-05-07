@@ -10,3 +10,17 @@
     - mysql
     - nginx
     - postfix
+
+
+- name: removing packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: removing packages
+    ansible.builtin.dnf:
+      name: "{{item}}"
+      state: labsent
+    loop:
+    - mysql
+    - nginx
+    - postfix
