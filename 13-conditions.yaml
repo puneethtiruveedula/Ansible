@@ -1,9 +1,9 @@
 - name: check number
   hosts: localhost
   vars_prompt:  #prompts are always considered as text/string
-  -name: number 
-   prompt: please enter number
-   private: no
+  - name: number 
+    prompt: please enter number
+    private: no
   tasks: 
   - name: number is less than 10
     ansible.builtin.debug:
