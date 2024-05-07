@@ -1,0 +1,11 @@
+- name: demo on loops
+  hosts: localhosts
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
+    loop:
+    - linex
+    - shell
+    - ansible
+    - terafform
