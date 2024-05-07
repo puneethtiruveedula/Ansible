@@ -19,7 +19,7 @@
   - name: removing packages
     ansible.builtin.dnf:
       name: "{{item}}"
-      state: labsent
+      state: absent
     loop:
     - mysql
     - nginx
